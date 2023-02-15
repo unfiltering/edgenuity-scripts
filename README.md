@@ -1,2 +1,2 @@
-# edgenuity-scripts
-edgenuity scripts from someone who knows what they're doing.
+# unfiltering's public library
+*Sorry, too lazy to put something here. Come back later, I might've gained the inspiration.*

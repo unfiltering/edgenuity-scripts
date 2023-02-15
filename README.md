@@ -1,9 +1,9 @@
 # unfiltering's public library
-Okay, let's start with the emojis. <h1>**WHY ARE THEY THERE???**</h1>
-They're there to mark if you can use them with Tampermonkey.<br>***Simple, right?*** Well, yes it is. Here's the key.
+Okay, let's start with the emojis. ***WHY ARE THEY THERE???***
+They're there to mark if you can use them with Tampermonkey.<br>*Simple, right?* Well, yes it is. Here's the key.
 ## Key
-🟢 Usable <br>
-🔴 Cannot be used <br>
+🟢 Usable with tampermonkey <br>
+🔴 Cannot be used with tampermonkey <br>
 # End.
 
 *Sorry, too lazy to put something here. Come back later, I might've gained the inspiration.*

@@ -2,7 +2,9 @@
 <br>
 Today is the day I bring this to light. I have a collection of cool tweaks, and scripts that you can use... 
 <h3>RIGHT. NOW.</h3>
-but <b>how???</b> Well, simply go to your browser, click your url bar, and type <br> ```bash javascript:``` <br>This is a little url that executes javascript. Simply type it in, and paste in one of my scripts. Then, do as it says!
+but <b>how???</b> Well, simply go to your browser, click your url bar, and type <br>
+```javascript:```
+<br>This is a little url that executes javascript. Simply type it in, and paste in one of my scripts. Then, do as it says!
 <br>
 # ---------Info
 <br>

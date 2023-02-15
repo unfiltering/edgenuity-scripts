@@ -1,7 +1,7 @@
 # 📕 unfiltering's public library 📕
 Today is the day I bring this to light. I have a collection of cool tweaks, and scripts that you can use... 
 <h3>RIGHT. NOW.</h3>
-but h***ooooooooooooooooo***w??? Well, simply go to your browser, click your url bar, and type <br>``javascript:``<br>This is a little url that executes javascript. Simply type it in, and paste in one of my scripts. Then, do as it says!
+but h ***ooooooooooooooooo*** w??? Well, simply go to your browser, click your url bar, and type <br> ``javascript:`` <br>This is a little url that executes javascript. Simply type it in, and paste in one of my scripts. Then, do as it says!
 # ---------Info
 Okay, what's with the emojis? ***WHY ARE THEY THERE???***
 They're there to mark if you can use them with Tampermonkey.<br>*Simple, right?* Well, yes it is. Here's the key.

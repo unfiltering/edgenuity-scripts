@@ -1,5 +1,4 @@
-'use strict';
-alert("Loaded. \n Select any text and press the button.")
+'use strict';console.log("Loading.");
 (function() {
   function init() {
     var node = document.getElementById("stageFrame");
@@ -66,5 +65,4 @@ alert("Loaded. \n Select any text and press the button.")
     var facebookString = "https://brainly.com/app/ask?entry=top&q=" + encodeURIComponent(doc.getSelection().toString());
     window.open(facebookString, "_blank");
   };
-  setInterval(init, 100);
-})();
+  setInterval(init, 100);alert("Fully loaded, do not execute again on the same page. \n/------FAQ------/\nQ:How do I do this?\nA:Select any text and press the button.\n\n          - Deobfuscated by 'github.com/unfiltering'");})();

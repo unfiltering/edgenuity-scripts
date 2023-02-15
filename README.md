@@ -1,5 +1,5 @@
 # unfiltering's public library
-Okay, let's start with the emojis. **WHY ARE THEY THERE???**
+Okay, let's start with the emojis. <h1 color: red; >**WHY ARE THEY THERE???**</h1>
 They're there to mark if you can use them with Tampermonkey.<br>***Simple, right?*** Well, yes it is. Here's the key.
 ## Key
 🟢 Usable <br>

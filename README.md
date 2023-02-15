@@ -1,4 +1,6 @@
 # unfiltering's public library
+Today is the day i bring this to light. I have a collection of cool tweaks, and scripts that you can use... 
+<h3>RIGHT. NOW.</h3>
 # Info
 Okay, what's with the emojis? ***WHY ARE THEY THERE???***
 They're there to mark if you can use them with Tampermonkey.<br>*Simple, right?* Well, yes it is. Here's the key.
@@ -93,3 +95,20 @@ They're there to mark if you can use them with Tampermonkey.<br>*Simple, right?*
 <br>
 <br>
 <br>*Sorry, too lazy to put something here. Come back later, I might've gained the inspiration.*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

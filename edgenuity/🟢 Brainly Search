@@ -1,4 +1,5 @@
 'use strict';
+alert("Loaded. \n Select any text and press the button.")
 (function() {
   function init() {
     var node = document.getElementById("stageFrame");

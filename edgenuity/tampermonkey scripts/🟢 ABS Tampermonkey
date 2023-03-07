@@ -1,0 +1,82 @@
+// ==UserScript==
+// @name         Automatic Brainly Search
+// @namespace    https://student.edgenuity.com/enrollment/3d2df747-6c93-43c2-b000-7ccaa4918c2d/coursemap?returnOrder=fb27e724-c3a6-4449-b9c0-22ba2ae6b3ba
+// @version      1.2.1
+// @description  automatically searches when you select something.
+// @author       float#8692 or github.com/unfiltering
+// @match        *://*.core.learn.edgenuity.com/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=edgenuity.com
+// @grant        none
+// ==/UserScript==
+
+console.log("[Edgenuity] Automatic Brainly search has loaded.");
+(function() {
+  function init() {
+    var node = document.getElementById("stageFrame");
+    if (node.contentDocument.getElementById("iFramePreview") != null || InnerFrameIsCurrent == true) {
+      node = node.contentDocument.getElementById("iFramePreview");
+      InnerFrameIsCurrent = true;
+    }
+    if (node != null) {
+      if (node.onmousedown == null || node.onmouseup == null) {
+        doc = node.contentDocument;
+        w = node.contentWindow;
+        node.contentDocument.body.onmouseup = up;
+        node.contentDocument.body.onmousedown = update;
+      }
+    }
+  }
+  function search() {
+    leftImgURL = true;
+    var facebookString = "https://brainly.com/app/ask?entry=top&q=" + encodeURIComponent(doc.getSelection().toString());
+    window.open(facebookString, "_blank");
+  }
+  function up(e) {
+    var rightImgURL = doc.getSelection().toString();
+    if (leftImgURL == false && rightImgURL != "") {
+	search();
+      var _curr_dragged_point = previewElt.getBoundingClientRect();
+      button.style.visibility = "visible";
+      button.style.top = e.clientY + _curr_dragged_point.y + -3.5 + "px";
+      button.style.left = e.clientX + _curr_dragged_point.x + -4 + "px"; document.getElementById("searchButton").style.visibility = "hidden";
+    } else {
+      leftImgURL = false;
+    }
+  }
+  function update(givenRuns) { document.getElementById("searchButton").style.visibility = "hidden";
+    if (w.getSelection) {
+      if (w.getSelection().empty) {
+        w.getSelection().empty();
+      } else {
+        if (w.getSelection().removeAllRanges) {
+          w.getSelection().removeAllRanges();
+        }
+      }
+    } else {
+      if (doc.selection) {
+        doc.selection.empty();
+      }
+    }
+  }
+  var tiledImageBoundsUpdatesNums = ["searchButton", "open", "left", "3854122MzwvXU", "toString", "visible", "selection", "getSelection", "17lcazQI", "1174885nKCnWd", "onclick", "32251feHcHM", "stageFrame", "7EuuxEQ", "position", "526139hAqDLU", "button", "absolute", "innerText", "iFramePreview", "clientY", "contentDocument", "709454Wejzgx", "1MXRIKd", "createElement", "onmousedown", "style", "removeAllRanges", "clientX", "427376IGafuU", "https://brainly.com/app/ask?entry=top&q=", "onmouseup", "visibility",
+  "getBoundingClientRect", "_blank", "top", "78785qMtMQF", "2SxEXdZ", "body", "contentWindow", "append", "getElementById", "empty"];
+  var scheduleUpdateTiledImageBounds = function(whichImage, forceExecution) {
+    whichImage = whichImage - 176;
+    var tiledImageBoundsUpdatesNum = tiledImageBoundsUpdatesNums[whichImage];
+    return tiledImageBoundsUpdatesNums[whichImage];
+  };
+  var InnerFrameIsCurrent = false;
+  var doc = document.getElementById("stageFrame").contentDocument;
+  var w = document.getElementById("stageFrame").contentWindow;
+  var previewElt = document.getElementById("stageFrame");
+  var leftImgURL = false;
+  var button = document.createElement("button");
+  button.id = "searchButton";
+  button.innerText = "If you can see this, it's a bug.";
+  button.style.position = "absolute";
+  button.style.visibility = "visible";
+  document.body.append(button);
+  document.getElementById("searchButton").onclick = function() {
+    console.log("[Edgenuity] Error, unexpected 'button.style.visibility', failed to press.")
+  };
+  setInterval(init, 100);})();

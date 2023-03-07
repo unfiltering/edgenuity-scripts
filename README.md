@@ -9,6 +9,7 @@ They're there to mark if you can use them with Tampermonkey.<br>*Simple, right?*
 ## Key
 🟢 Usable with tampermonkey <br>
 🔴 Cannot be used with tampermonkey <br>
+🟣 Unsure <br>
 # End.
 <br>
 <br>
